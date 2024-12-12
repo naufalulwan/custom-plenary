@@ -6,7 +6,7 @@ local with = context_manager.with
 local open = context_manager.open
 
 local README_STR_PATH = vim.fn.fnamemodify(debug_utils.sourced_filepath(), ":h:h:h") .. "/README.md"
-local README_FIRST_LINE = "# plenary.nvim"
+local README_FIRST_LINE = "# custom_plenary"
 
 describe("context_manager", function()
   it("works with objects", function()
