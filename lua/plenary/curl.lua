@@ -203,7 +203,7 @@ parse.request = function(opts)
   end
 
   if opts.compressed then
-    table.insert(result)
+    table.insert(result, "--compressed")
   end
   append(parse.method(opts.method))
   append(parse.headers(opts.headers))
