@@ -179,8 +179,6 @@ parse.accept_header = function(s)
   return { "-H", "Accept: " .. s }
 end
 
--- Parse Request -------------------------------------------
-------------------------------------------------------------
 parse.request = function(opts)
   if opts.body then
     local b = opts.body
@@ -205,7 +203,7 @@ parse.request = function(opts)
   end
 
   if opts.compressed then
-    table.insert(result, "--compressed")
+    table.insert(result)
   end
   append(parse.method(opts.method))
   append(parse.headers(opts.headers))
