@@ -1,35 +1,35 @@
-local _MODREV, _SPECREV = 'scm', '-1'
+local _MODREV, _SPECREV = "scm", "-1"
 rockspec_format = "3.0"
-package = 'plenary.nvim'
+package = "custom_plenary"
 version = _MODREV .. _SPECREV
 
 description = {
-   summary = 'lua functions you don\'t want to write ',
-   labels = { "neovim" },
-   detailed = [[
+  summary = "lua functions you don't want to write ",
+  labels = { "neovim" },
+  detailed = [[
       plenary: full; complete; entire; absolute; unqualified. All the lua functions I don't want to write twice.
    ]],
-   homepage = 'http://github.com/nvim-lua/plenary.nvim',
-   license = 'MIT/X11',
+  homepage = "https://github.com/naufalulwan/custom-plenary",
+  license = "MIT/X11",
 }
 
 dependencies = {
-   'lua >= 5.1, < 5.4',
-   'luassert'
+  "lua >= 5.1, < 5.4",
+  "luassert",
 }
 
 source = {
-   url = 'git://github.com/nvim-lua/plenary.nvim',
+  url = "git://github.com/naufalulwan/custom-plenary",
 }
 
 build = {
-   type = 'builtin',
-   copy_directories = {
-     'data',
-     'plugin'
-   }
+  type = "builtin",
+  copy_directories = {
+    "data",
+    "plugin",
+  },
 }
 test = {
   type = "command",
-  command = "make test"
+  command = "make test",
 }
